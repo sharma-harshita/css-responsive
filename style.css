@@ -1,0 +1,33 @@
+.parent{
+    display : flex;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+h1{
+    color: red;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 650px) {
+    h1{
+        color: blue;
+    }
+    .parent{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+    h1{
+        color: green;
+    }
+    .box{
+        background-color: yellow;
+    }
+}
